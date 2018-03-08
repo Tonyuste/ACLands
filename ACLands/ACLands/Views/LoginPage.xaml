@@ -48,6 +48,9 @@
                     Placeholder="Enter your password...">
                 </Entry>
             </Grid>
+            <ActivityIndicator>
+                
+            </ActivityIndicator>
             <StackLayout
                 Orientation="Horizontal">
                 <Label
@@ -59,10 +62,11 @@
                     HorizontalOptions="End">
                 </Switch>
             </StackLayout>
-
-            <ActivityIndicator>
-                
-            </ActivityIndicator>
+            <Label
+                HorizontalOptions="Center"    
+                Text="Forgot your password?"
+                TextColor="Blue"    >
+            </Label>    
             <StackLayout
                 Margin="40,0">
                 <Button
