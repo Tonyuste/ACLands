@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>ACLands.Droid</RootNamespace>
     <AssemblyName>ACLands.Android</AssemblyName>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -68,6 +68,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\instagram_logo.png" />
+    <AndroidResource Include="Resources\drawable\twitter_logo.png" />
+    <AndroidResource Include="Resources\drawable\facebook_logo.png" />
+    <AndroidResource Include="Resources\drawable\onu.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -82,7 +86,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ACLands\ACLands.csproj">
-      <Project>{07DD5FDC-0BC5-4E79-9EF3-8641D86C0585}</Project>
+      <Project>{732B9EA7-1AD3-4C43-92B4-3E578910593C}</Project>
       <Name>ACLands</Name>
     </ProjectReference>
   </ItemGroup>
