@@ -93,7 +93,7 @@
                 </Image>
                 <Image 
                     Source="twitter_logo"
-                    WidthRequest="100">                   
+                    WidthRequest="75">                   
                 </Image>
                 <Image 
                     Source="instagram_logo"
