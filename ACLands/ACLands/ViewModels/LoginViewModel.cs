@@ -5,10 +5,12 @@
     using System.ComponentModel;
     using System.Windows.Input;
     using Xamarin.Forms;
+    using Views;
 
     public class LoginViewModel: BaseViewModel
     {
         #region Attributes
+        private string email;
         private string password;
         private bool isRunning;
         private bool isEnabled;
@@ -17,8 +19,8 @@
         #region Properties
         public string Email
         {
-            get;
-            set;
+            get { return email; }
+            set { SetValue(ref email, value); }
         }
 
         public string Password
@@ -51,6 +53,9 @@
         {
             this.IsRemembered = true;
             this.IsEnabled = true;
+
+            this.Email = "tonyuste@gmail.com";
+            this.Password = "1234";
         }
         #endregion
 
@@ -100,11 +105,13 @@
 
             this.IsRunning = false;
             this.IsEnabled = true;
-            await Application.Current.MainPage.DisplayAlert(
-                    "OK",
-                    "Fuck yeah!!!",
-                    "Accept");
-            return;
+
+            this.Email = string.Empty;
+            this.Password = string.Empty;
+
+            MainViewModel.GetInstance().Lands = new LandsViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
+
         }
         #endregion
     }
