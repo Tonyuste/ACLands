@@ -9,12 +9,15 @@
         <StackLayout
             BindingContext="{Binding Lands}"
             Padding="5">
-            <ListView 
+            <ListView
+                ItemsSource="{Binding Lands}"> 
+                 
+            </ListView>
+           <!-- <ListView 
                 HasUnevenRows="true" 
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}"
                 ItemsSource="{Binding Lands}"
-                SeparatorVisibility="None"
                 RefreshCommand="{Binding RefreshCommand}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -39,7 +42,7 @@
                                     </Label>
                                 </StackLayout>
                                 <Image 
-                                        Grid.Column="2"
+                                        Grid.Column="1"
                                         HorizontalOptions="End" 
                                         Source="ic_chevron_right">
                                 </Image>
@@ -47,7 +50,7 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
+            </ListView>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
