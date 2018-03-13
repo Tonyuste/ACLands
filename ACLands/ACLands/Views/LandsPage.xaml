@@ -9,11 +9,7 @@
         <StackLayout
             BindingContext="{Binding Lands}"
             Padding="5">
-            <ListView
-                ItemsSource="{Binding Lands}"> 
-                 
-            </ListView>
-           <!-- <ListView 
+             <ListView 
                 HasUnevenRows="true" 
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}"
@@ -50,7 +46,7 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>-->
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
