@@ -12,7 +12,13 @@
             set;
         }
 
+        public TokenResponse Token
+        {
+            get;
+            set;
+        }
         #endregion
+
         #region ViewModels
         public LoginViewModel Login
         {
