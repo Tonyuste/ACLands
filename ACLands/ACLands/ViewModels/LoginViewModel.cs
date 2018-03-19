@@ -108,7 +108,7 @@
             }
 
             var token = await this.apiService.GetToken(
-                "http://192.168.2.250/ApiLands",
+                "http://acopaex.net/ApiLands",
                 this.Email,
                 this.Password);
 
