@@ -1,8 +1,8 @@
-﻿namespace ACLands.Models
+﻿namespace ACLands.Domain
 {
     public class Response
     {
-       public bool IsSuccess
+        public bool IsSuccess
         {
             get;
             set;
