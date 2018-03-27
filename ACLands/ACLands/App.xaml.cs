@@ -19,6 +19,7 @@
             InitializeComponent();
 
             MainPage = new NavigationPage(new LoginPage());
+       
         }
 		#endregion
 

@@ -116,6 +116,9 @@
     <BundleResource Include="Resources\facebook_logo.png" />
     <BundleResource Include="Resources\onu.png" />
     <BundleResource Include="Resources\twitter_logo.png" />
+    <BundleResource Include="Resources\ic_exit_to_app.png" />
+    <BundleResource Include="Resources\ic_insert_chart.png" />
+    <BundleResource Include="Resources\ic_settings.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -149,6 +152,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>2.5.0.280555</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugins.Settings">
+      <Version>3.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

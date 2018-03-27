@@ -1,7 +1,9 @@
 ﻿namespace ACLands.ViewModels
 {
     using Models;
+    using System;
     using System.Collections.Generic;
+    using System.Collections.ObjectModel;
 
     public class MainViewModel
     {
@@ -13,6 +15,12 @@
         }
 
         public TokenResponse Token
+        {
+            get;
+            set;
+        }
+
+        public ObservableCollection<MenuItemViewModel> Menus
         {
             get;
             set;
@@ -44,6 +52,7 @@
         {
             instance = this;
             this.Login = new LoginViewModel();
+            this.LoadMenu();
         }
         #endregion
 
@@ -61,6 +70,32 @@
         }
         #endregion
 
+        #region Methods
+        private void LoadMenu()
+        {
+            this.Menus = new ObservableCollection<MenuItemViewModel>();
 
+            this.Menus.Add(new MenuItemViewModel
+            {
+                Icon = "ic_settings",
+                PageName = "MyProfilePage",
+                Title = "Mi Perfil",
+            });
+
+            this.Menus.Add(new MenuItemViewModel
+            {
+                Icon = "ic_insert_chart",
+                PageName = "StaticsPage",
+                Title = "Estadísticas",
+            });
+
+            this.Menus.Add(new MenuItemViewModel
+            {
+                Icon = "ic_exit_to_app",
+                PageName = "LoginPage",
+                Title = "Cerrar Sesión",
+            });
+        }
+        #endregion
     }
 }

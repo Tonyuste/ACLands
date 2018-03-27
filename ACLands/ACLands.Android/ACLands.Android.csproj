@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>ACLands.Droid</RootNamespace>
     <AssemblyName>ACLands.Android</AssemblyName>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -76,6 +76,9 @@
     <PackageReference Include="Xam.Plugin.Connectivity">
       <Version>3.1.1</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugins.Settings">
+      <Version>3.1.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementations\Localize.cs" />
@@ -96,6 +99,9 @@
     <AndroidResource Include="Resources\drawable\facebook_logo.png" />
     <AndroidResource Include="Resources\drawable\onu.png" />
     <AndroidResource Include="Resources\drawable\twitter_logo.png" />
+    <AndroidResource Include="Resources\drawable\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable\ic_insert_chart.png" />
+    <AndroidResource Include="Resources\drawable\ic_exit_to_app.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
