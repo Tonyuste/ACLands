@@ -1,12 +1,19 @@
 ﻿namespace ACLands
 {
     using Xamarin.Forms;
-
     using Views;
 
 	public partial class App : Application
 	{
-		#region Constructors
+        #region Properties
+        public static NavigationPage Navigator
+        {
+            get;
+            internal set;
+        } 
+        #endregion
+
+        #region Constructors
         public App()
         {
             InitializeComponent();
