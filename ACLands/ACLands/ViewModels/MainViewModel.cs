@@ -14,7 +14,13 @@
             set;
         }
 
-        public TokenResponse Token
+        public string Token
+        {
+            get;
+            set;
+        }
+
+        public string TokenType
         {
             get;
             set;
